@@ -1,0 +1,83 @@
+/* Style général de la page */
+body {
+    /* Image de fond */
+    background-image: url('../img/background-catacombs.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    /* On utilise flex pour centrer le plateau au milieu de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* La grille du jeu */
+#board {
+    display: grid;
+    /* On crée 3 colonnes de 100 pixels chacune */
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px; /* Espace entre les tuiles */
+    background-color: rgba(95, 95, 95, 0.491); 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    /* Transition pour l'animation de victoire */
+    transition: transform 2s ease-in-out, opacity 0.5s; 
+    z-index: 5;
+}
+
+/* Style de chaque tuile */
+.tile {
+    width: 100px;
+    height: 100px;
+    /* On prépare l'image de fond pour toutes les tuiles */
+    background-image: url('../img/taquin.png'); 
+    background-size: 300px 300px; /* L'image entière fait 3x3 tuiles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.873); 
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box; /* Pour que la bordure ne change pas la taille de la tuille*/
+}
+
+/* Style pour la case vide */
+.empty {
+    background-image: none; /* On retire l'image */
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+/* Classe d'affichage du plateau à la victoire */
+#board.mini {
+    position: fixed;
+    top: 20px; /* Position en haut à gauche */
+    left: 20px;      
+    margin: 0;       
+    transform: scale(0.4); /* On réduit la taille à 40% */
+    transform-origin: top left; /* On réduit et on le met en haut à gauche*/
+    transition: all 2s ease-in-out; 
+    z-index: 100;   
+    pointer-events: none; /* Pour ne plus cliquer sur les tuiles */
+}
+
+/* Fenêtre de texte qui apparaît à la fin avec l'argumentaire de la lettre */
+#victory-screen {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.479);
+    border-radius: 15px;
+    color: white;
+}
+
+#victory-text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
