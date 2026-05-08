@@ -129,6 +129,7 @@ function verifierVictoire() {
             emptyTile.style.backgroundPosition = "-200px -200px";
             emptyTile.style.backgroundSize = "300px 300px";
         }
+        document.getElementById('btn-suivant-catacomb').style.display = 'flex';
     }
 }
 

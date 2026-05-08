@@ -36,7 +36,7 @@ body {
     height: 100px;
     /* On prépare l'image de fond pour toutes les tuiles */
     background-image: url('../img/taquin.png'); 
-    background-size: 300px 300px; /* L'image entière fait 3x3 tuiles */
+    background-size: 300px 300px; /* L'image entière fait 3x3 tuiles (100px par tuile)*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3); 
 }
 
-/* Classe d'affichage du plateau à la victoire */
+/* Plateau en petit qui serra affiché en cas de victoire */
 #board.mini {
     position: fixed;
     top: 20px; /* Position en haut à gauche */
@@ -77,7 +77,7 @@ body {
 }
 
 #victory-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
     line-height: 1.6;
 }

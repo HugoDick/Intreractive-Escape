@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#metro-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 1.5s ease-in-out;
+}
+
+#background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/metro.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#cadenas-zone {
+    position: absolute;
+    top: 45%; 
+    left: 30%; 
+    width: 20%;
+    height: 25%;
+    cursor: pointer;
+}
+
+.zoomed {
+    transform: scale(2) translate(10%, -5%);
+}
+
+#ui-code {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#victory-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
