@@ -10,10 +10,7 @@ function verifierReponse() {
         victoryScreen.style.display = "block";
         btnSuivant.style.display = "flex";
 
-        setTimeout(function() {
-            victoryScreen.style.opacity = "1";
-            btnSuivant.style.opacity = "1";
-        }, 100);
+        setTimeout(function() {victoryScreen.style.opacity = "1";btnSuivant.style.opacity = "1";}, 100);
     } else {
         alert("Ce n'est pas la bonne réponse...");
         input.value = "";

@@ -97,3 +97,20 @@ body {
     border-radius: 5px; 
     border: none;
 }
+
+.boite-credits {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    padding: 15px;
+}
+
+.texte-credits {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7); 
+    text-align: center;
+    margin: 0;
+}

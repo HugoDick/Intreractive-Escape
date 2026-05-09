@@ -36,6 +36,6 @@ body {
 }
 
 .wave label:hover span {
-    color:rgb(87, 75, 149);
+    color:rgb(58, 52, 51);
     transform: translateY(-30px);
 }
