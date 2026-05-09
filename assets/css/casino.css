@@ -1,0 +1,49 @@
+body {
+    background-image: url('../img/background-casino.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#input-zone-container {
+    position: absolute;
+    bottom: 15%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prefix {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+#reponse-input {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.input-group .bouton {
+    width: 80px;
+    height: 30px;
+    font-size: 0.8rem;
+}
