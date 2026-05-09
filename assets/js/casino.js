@@ -5,7 +5,7 @@ function verifierReponse() {
     const inputZone = document.getElementById('input-zone-container');
     const btnSuivant = document.getElementById('btn-suivant');
 
-    if (reponse === "entretient") {
+    if (reponse === "entretien") {
         inputZone.style.display = "none";
         victoryScreen.style.display = "block";
         btnSuivant.style.display = "flex";
