@@ -16,3 +16,7 @@ function verifierReponse() {
         input.value = "";
     }
 }
+
+function afficherIndice() {
+    alert("Un mot en lien avec le processus de recrutement");
+}

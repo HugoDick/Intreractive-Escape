@@ -44,3 +44,7 @@ function verifierCode() {
         input.value = "";
     }
 }
+
+function afficherIndice() {
+    alert("Regardez attentivement chaque fenêtre, le trajet semble plus chargé dans certaines voitures que dans d'autres");
+}

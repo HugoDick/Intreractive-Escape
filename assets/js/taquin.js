@@ -133,6 +133,10 @@ function verifierVictoire() {
     }
 }
 
+function afficherIndice() {
+    alert("C'est un puzzle coulissant, si vous cliquez sur une pièce adjacente à l'espace vide, celle-ci se mettra dedans. But du jeu : remettre les pièces dans l'ordre.");
+}
+
 // Lancement du jeu
 melanger();
 dessinerJeu();
