@@ -9,6 +9,7 @@ function verifierReponse() {
         inputZone.style.display = "none";
         victoryScreen.style.display = "block";
         btnSuivant.style.display = "flex";
+        document.querySelector('.btn-fixe-haut-droite').style.display = 'none';
 
         setTimeout(function() {victoryScreen.style.opacity = "1";btnSuivant.style.opacity = "1";}, 100);
     } else {

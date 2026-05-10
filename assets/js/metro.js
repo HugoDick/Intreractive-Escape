@@ -39,6 +39,8 @@ function verifierCode() {
         container.classList.remove('zoomed');
         
         setTimeout(() => {victoryScreen.style.display = "block"; btnSuivant.style.display = "flex";}, 1000);
+        document.querySelector('.btn-fixe-haut-droite').style.display = 'none';
+        document.querySelector('.btn-fixe-gauche').style.display = 'none';
     } else {
         alert("Code incorrect !"); // Pop up
         input.value = "";
@@ -46,5 +48,5 @@ function verifierCode() {
 }
 
 function afficherIndice() {
-    alert("Regardez attentivement chaque fenêtre, le trajet semble plus chargé dans certaines voitures que dans d'autres");
+    alert("Cliquez sur le cadenas pour entrer le code. Regardez attentivement chaque fenêtre, le trajet semble plus chargé dans certaines voitures que dans d'autres");
 }

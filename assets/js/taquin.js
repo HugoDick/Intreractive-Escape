@@ -130,11 +130,26 @@ function verifierVictoire() {
             emptyTile.style.backgroundSize = "300px 300px";
         }
         document.getElementById('btn-suivant-catacomb').style.display = 'flex';
+        document.querySelector('.btn-fixe-haut-gauche').style.display = 'none';
+        document.querySelector('.btn-fixe-haut-droite').style.display = 'none';
     }
 }
 
 function afficherIndice() {
     alert("C'est un puzzle coulissant, si vous cliquez sur une pièce adjacente à l'espace vide, celle-ci se mettra dedans. But du jeu : remettre les pièces dans l'ordre.");
+}
+
+// Solution du taquin
+function resoudreTaquin() {
+    const confirmation = confirm("Êtes-vous sûr de vouloir afficher la solution ?");
+
+    if (confirmation) {
+        cases = [1, 2, 3, 4, 5, 6, 7, 8, null];
+        
+        dessinerJeu();
+
+        verifierVictoire();
+    }
 }
 
 // Lancement du jeu
